@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<suite name="example suite 1" verbose="1" >
+  <test name="Regression suite 1" >
+  <!--
+    <packages>
+      <package name="testngXML" ></package>
+   </packages-->
+   <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+   <classes>
+      <!--class name="testngXML.testNgXML1"/>
+	  <class name="testngXML.testNgXML2"/>
+	  <class name="testngXML2.testNgXML3"/-->
+	  <class name="testngXML2.testNgGroup"/>
+      
+    </classes>
+	
+	
+   
+   
+ </test>
+</suite>
