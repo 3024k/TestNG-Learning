@@ -1,26 +1,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <!--?xml version="1.0" encoding="UTF-8"?-->
-<suite name="example suite 1" verbose="1" >
-  <test name="Regression suite 1" >
-  <!--
-    <packages>
-      <package name="testngXML" ></package>
-   </packages-->
-   <groups>
-      <run>
-        <include name="Regression"/>
-      </run>
-    </groups>
-   <classes>
-      <!--class name="testngXML.testNgXML1"/>
-	  <class name="testngXML.testNgXML2"/>
-	  <class name="testngXML2.testNgXML3"/-->
-	  <class name="testngXML2.testNgGroup"/>
-      
+<suite name="Sample Suite" verbose="1" >
+  <test name="Unit Level Test" >
+    <classes>
+		<class name="multipleTestsWithTestNG.Entry.AddTestCase" >
+			<methods>
+			<include name="addLocationTestCase" />
+			<include name="addDepartmentTestCase" />
+			<exclude name="addEmployeeTestCase" />
+			</methods>
+		</class>
+		<class name="multipleTestsWithTestNG.Entry.EditTestCase" />
     </classes>
-	
-	
-   
-   
- </test>
+  </test>
+  <test name="Regression Test">
+    <classes>
+		<class name="multipleTestsWithTestNG.Record.addUserTestCase" />
+		<class name="multipleTestsWithTestNG.Record.deleteUserTestCase" />
+    </classes>
+  </test>
 </suite>

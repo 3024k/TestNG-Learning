@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47" started-at="2020-12-31T08:57:44Z" finished-at="2020-12-31T08:57:44Z">
+  <suite name="Sample Suite" duration-ms="130" started-at="2021-01-05T06:39:13Z" finished-at="2021-01-05T06:39:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47" started-at="2020-12-31T08:57:44Z" finished-at="2020-12-31T08:57:44Z">
-      <class name="testNgPriority.testCasePriority">
-        <test-method status="PASS" signature="Registration()[pri:0, instance:testNgPriority.testCasePriority@1810399e]" name="Registration" duration-ms="9" started-at="2020-12-31T08:57:44Z" finished-at="2020-12-31T08:57:44Z">
+    <test name="Unit Level Test" duration-ms="53" started-at="2021-01-05T06:39:13Z" finished-at="2021-01-05T06:39:13Z">
+      <class name="multipleTestsWithTestNG.Entry.AddTestCase">
+        <test-method status="PASS" signature="addLocationTestCase()[pri:0, instance:multipleTestsWithTestNG.Entry.AddTestCase@23ceabc1]" name="addLocationTestCase" duration-ms="12" started-at="2021-01-05T06:39:13Z" finished-at="2021-01-05T06:39:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Registration -->
-        <test-method status="PASS" signature="Email()[pri:2, instance:testNgPriority.testCasePriority@1810399e]" name="Email" duration-ms="3" started-at="2020-12-31T08:57:44Z" finished-at="2020-12-31T08:57:44Z">
+        </test-method> <!-- addLocationTestCase -->
+        <test-method status="PASS" signature="addDepartmentTestCase()[pri:0, instance:multipleTestsWithTestNG.Entry.AddTestCase@23ceabc1]" name="addDepartmentTestCase" duration-ms="2" started-at="2021-01-05T06:39:13Z" finished-at="2021-01-05T06:39:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Email -->
-        <test-method status="PASS" signature="Login()[pri:3, instance:testNgPriority.testCasePriority@1810399e]" name="Login" duration-ms="2" started-at="2020-12-31T08:57:44Z" finished-at="2020-12-31T08:57:44Z">
+        </test-method> <!-- addDepartmentTestCase -->
+      </class> <!-- multipleTestsWithTestNG.Entry.AddTestCase -->
+      <class name="multipleTestsWithTestNG.Entry.EditTestCase">
+        <test-method status="PASS" signature="editLocationTestCase()[pri:0, instance:multipleTestsWithTestNG.Entry.EditTestCase@5d5eef3d]" name="editLocationTestCase" duration-ms="1" started-at="2021-01-05T06:39:13Z" finished-at="2021-01-05T06:39:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-      </class> <!-- testNgPriority.testCasePriority -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- editLocationTestCase -->
+      </class> <!-- multipleTestsWithTestNG.Entry.EditTestCase -->
+    </test> <!-- Unit Level Test -->
+    <test name="Regression Test" duration-ms="12" started-at="2021-01-05T06:39:13Z" finished-at="2021-01-05T06:39:13Z">
+      <class name="multipleTestsWithTestNG.Record.deleteUserTestCase">
+        <test-method status="PASS" signature="deleteUserTest()[pri:0, instance:multipleTestsWithTestNG.Record.deleteUserTestCase@55f3ddb1]" name="deleteUserTest" duration-ms="1" started-at="2021-01-05T06:39:13Z" finished-at="2021-01-05T06:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserTest -->
+      </class> <!-- multipleTestsWithTestNG.Record.deleteUserTestCase -->
+      <class name="multipleTestsWithTestNG.Record.addUserTestCase">
+        <test-method status="PASS" signature="addUserTest()[pri:0, instance:multipleTestsWithTestNG.Record.addUserTestCase@cc285f4]" name="addUserTest" duration-ms="4" started-at="2021-01-05T06:39:13Z" finished-at="2021-01-05T06:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserTest -->
+      </class> <!-- multipleTestsWithTestNG.Record.addUserTestCase -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- Sample Suite -->
 </testng-results>
