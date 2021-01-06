@@ -1,6 +1,57 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <!--?xml version="1.0" encoding="UTF-8"?-->
-<suite name="Sample Suite" verbose="1" >
+
+
+<suite name="Preserve order test runs">
+	<listeners>
+		<listener class-name="RetryExecutingFailedCase.RetryListener"/>
+	</listeners>
+	
+  <test name="Regression 1"  preserve-order="false">
+  <packages>
+      <package name="RetryExecutingFailedCase" ></package>
+   </packages>
+    <classes>
+      <class name="RetryExecutingFailedCase.retryExecutionTest"/>
+    </classes>
+  </test>
+</suite>
+
+<!-- Preserve order suite -->
+<!--suite name="Preserve order test runs">
+  <test name="Regression 1"  preserve-order="false">
+    <classes>
+      <class name="preserveOrderTestNG.classOne"/>
+	  <class name="preserveOrderTestNG.classTwo"/>
+	  <class name="preserveOrderTestNG.classThree"/>
+    </classes>
+  </test>
+</suite-->
+
+<!-- suite name="Parallel test suite" parallel="classes" thread-count="2">
+  <test name="Test 1">
+    <classes>
+      <class name="parallelExecutionOfClasses.TestParallelClassOne"/>
+      <class name="parallelExecutionOfClasses.TestParallelClassTwo"/>
+    </classes>
+  </test>
+</suite-->
+<!--suite name="Parallel test suite" parallel="methods" thread-count="2">
+  <test name="Regression 1">
+    <classes>
+      <class name="parallelExecutionOfTestMethods.parallelWithTestNG"/>
+    </classes>
+  </test>
+</suite-->
+<!--suite name="Sample Suite" verbose="1" >
+	<test name = "Parameterization Test in TestNG">
+		<parameter name="browser" value="Chrome"/>
+		<parameter name="username" value="testUserName"/>
+		<parameter name="password" value="testPassword"/>
+		<classes>
+			<class name="parameterizationIntestNG.parameterizationTestNG" />
+		</classes>
+	</test>
   <test name="Unit Level Test" >
     <classes>
 		<class name="multipleTestsWithTestNG.Entry.AddTestCase" >
@@ -19,4 +70,4 @@
 		<class name="multipleTestsWithTestNG.Record.deleteUserTestCase" />
     </classes>
   </test>
-</suite>
+</suite-->
