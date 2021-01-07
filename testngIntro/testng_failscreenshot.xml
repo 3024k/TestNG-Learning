@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Fail Screenshot">
+
+<listeners>
+        <listener class-name="onTestFailedTakeScreenshots.ScreenShotListener" />
+    </listeners>
+
+    <test name="fail_screenshot">
+        <classes>
+            <class name="onTestFailedTakeScreenshots.FirstTest">
+        </class>
+        </classes>
+    </test>
+
+</suite>
