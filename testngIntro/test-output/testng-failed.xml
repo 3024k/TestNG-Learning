@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Fail Screenshot]">
-  <listeners>
-    <listener class-name="onTestFailedTakeScreenshots.ScreenShotListener"/>
-  </listeners>
-  <test thread-count="5" name="fail_screenshot(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="onTestFailedTakeScreenshots.FirstTest">
+      <class name="passingDataToDataProviderFromExcelSheet.ReadExcelDataProvider">
         <methods>
-          <include name="search"/>
-          <include name="feelingLucky"/>
-          <include name="tearDown"/>
-          <include name="setUP"/>
+          <include name="test" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- onTestFailedTakeScreenshots.FirstTest -->
+      </class> <!-- passingDataToDataProviderFromExcelSheet.ReadExcelDataProvider -->
     </classes>
-  </test> <!-- fail_screenshot(failed) -->
-</suite> <!-- Failed suite [Fail Screenshot] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
